@@ -1,0 +1,35 @@
+set protocol kermit
+#set line /dev/ttyUSB0
+set line /dev/ttyUSB1
+#set line /dev/ttyUSB2
+#set line /dev/ttyUSB3
+#set line /dev/ttyUSB4
+#set line /dev/ttyUSB5
+#set line /dev/ttyUSB6
+#set line /dev/ttyS1
+#set speed 19200 # ipp-freebsd
+set speed 115200 # mtk-cobra/nvidia parker-eng
+#set speed 19200 # mtk-proto
+set terminal bytesize 8
+set parity none
+set stop-bits 1
+set flow-control none
+set carrier-watch off
+#set transfer character-set euc-jp
+#set terminal character-set transparent
+#set language none
+#set command bytesize 8
+#set terminal echo off
+#set terminal newline-mode on
+#set terminal cr-display normal
+
+#define debug set flow-control none
+#define diag set flow-control xon/xoff
+define line0 set line /dev/ttyUSB0
+define line1 set line /dev/ttyUSB1
+define line2 set line /dev/ttyUSB2
+define s19200 set speed 19200
+define ter set terminal bytesize 8
+define pari set parity none
+define flow set flow-control none
+define car  set carrier-watch off
